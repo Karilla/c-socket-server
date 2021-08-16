@@ -67,7 +67,7 @@ int main(int argc , char *argv[])
     printf("Listener on port %d \n", PORT);  
          
     //try to specify maximum of 3 pending connections for the master socket 
-    if (listen(master_socket, 3) < 0)  
+    if (listen(master_socket, 10) < 0)  
     {  
         perror("listen");  
         exit(EXIT_FAILURE);  
